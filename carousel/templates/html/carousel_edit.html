@@ -5,15 +5,15 @@
   <ul class="list-input settings-list">
       <li class="field comp-setting-entry is-set">
           <div class="wrapper-comp-setting">
-            <label class="label setting-label" for="edit_display_name">{% trans "Display name"%}</label>
+            <label class="label setting-label" for="edit_display_name">Отображаемое имя</label>
             <input class="input setting-input edit-display-name" id="edit_display_name" value="{{ self.display_name }}" type="text">
           </div>
-          <span class="tip setting-help">The title of the images carousel that is displayed to the user</span>
+          <span class="tip setting-help">Имя блока, которое будет показано пользователю</span>
       </li>
       <li class="field comp-setting-entry is-set">
           <div class="wrapper-comp-setting">
-            <label class="label setting-label" for="edit_data">Definition</label>
-            <span class="tip setting-help">The XML definition for the image carousel</span>
+            <label class="label setting-label" for="edit_data">Определение</label>
+            <span class="tip setting-help">XML-определение карусели. Внимание: Ссылаться следует на https.</span>
             <div class='codemirror-editor-wrapper'>
               <textarea class="block-xml-editor edit-data">{{ self.data }}</textarea>
             </div>
